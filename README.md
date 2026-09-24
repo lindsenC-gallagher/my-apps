@@ -1,4 +1,4 @@
-# Arcade
+# My Apps
 
-Landing page for the multiplayer games running on Cloudflare Workers.
+Landing page for the games and utils running on Cloudflare Workers.
 Published with GitHub Pages from `main`.

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Arcade</title>
+<title>My Apps</title>
 <style>
   :root { color-scheme: dark; }
   body {
@@ -13,6 +13,8 @@
   }
   header { max-width: 1200px; margin: 0 auto 40px; }
   h1 { margin: 0 0 8px; font-size: 2.2rem; }
+  h2.section { max-width: 1200px; margin: 48px auto 20px; font-size: 1.4rem; }
+  h2.section:first-of-type { margin-top: 0; }
   p.sub { margin: 0; color: #8b949e; }
   .grid {
     max-width: 1200px; margin: 0 auto;
@@ -33,9 +35,10 @@
 </head>
 <body>
 <header>
-  <h1>Arcade</h1>
-  <p class="sub">Multiplayer browser games, running on Cloudflare Workers.</p>
+  <h1>My Apps</h1>
+  <p class="sub">Browser apps running on Cloudflare Workers.</p>
 </header>
+<h2 class="section">Games</h2>
 <div class="grid">
   <a class="card" href="https://exploding-kittens.lindsen-cruz.workers.dev/">
     <img src="img/exploding-kittens.png" alt="Exploding Kittens">
@@ -57,6 +60,10 @@
     <img src="img/contexto-cc.png" alt="Contexto CC">
     <div class="meta"><h2>Contexto CC</h2><span>Daily Command Centre word guessing</span></div>
   </a>
+</div>
+
+<h2 class="section">Utils</h2>
+<div class="grid">
   <a class="card" href="https://poker-planning.lindsen-cruz.workers.dev/">
     <img src="img/poker-planning.png" alt="Planning Poker">
     <div class="meta"><h2>Planning Poker</h2><span>Team estimation, with emoji throwing</span></div>
