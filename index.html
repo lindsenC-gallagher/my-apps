@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Arcade</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    margin: 0; padding: 48px 24px 72px;
+    font: 16px/1.5 system-ui, -apple-system, "Segoe UI", sans-serif;
+    background: #0d1117; color: #e6edf3;
+  }
+  header { max-width: 1200px; margin: 0 auto 40px; }
+  h1 { margin: 0 0 8px; font-size: 2.2rem; }
+  p.sub { margin: 0; color: #8b949e; }
+  .grid {
+    max-width: 1200px; margin: 0 auto;
+    display: grid; gap: 24px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  a.card {
+    display: block; text-decoration: none; color: inherit;
+    background: #161b22; border: 1px solid #30363d; border-radius: 12px;
+    overflow: hidden; transition: transform .15s, border-color .15s;
+  }
+  a.card:hover { transform: translateY(-4px); border-color: #58a6ff; }
+  a.card img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; background: #0d1117; }
+  .meta { padding: 14px 16px 18px; }
+  .meta h2 { margin: 0 0 4px; font-size: 1.1rem; }
+  .meta span { color: #8b949e; font-size: .9rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Arcade</h1>
+  <p class="sub">Multiplayer browser games, running on Cloudflare Workers.</p>
+</header>
+<div class="grid">
+  <a class="card" href="https://exploding-kittens.lindsen-cruz.workers.dev/">
+    <img src="img/exploding-kittens.png" alt="Exploding Kittens">
+    <div class="meta"><h2>Exploding Kittens</h2><span>Draw, defuse, and dodge the kitten</span></div>
+  </a>
+  <a class="card" href="https://love-letter.lindsen-cruz.workers.dev/">
+    <img src="img/love-letter.png" alt="Love Letter">
+    <div class="meta"><h2>Love Letter</h2><span>Deduction duels for 2 to 8 players</span></div>
+  </a>
+  <a class="card" href="https://mantis.lindsen-cruz.workers.dev/">
+    <img src="img/mantis.png" alt="Mantis">
+    <div class="meta"><h2>Mantis</h2><span>Score big or steal big</span></div>
+  </a>
+  <a class="card" href="https://ono-99.lindsen-cruz.workers.dev/">
+    <img src="img/ono-99.png" alt="ONO 99">
+    <div class="meta"><h2>ONO 99</h2><span>Keep the running total under 99</span></div>
+  </a>
+  <a class="card" href="https://contexto-cc.lindsen-cruz.workers.dev/">
+    <img src="img/contexto-cc.png" alt="Contexto CC">
+    <div class="meta"><h2>Contexto CC</h2><span>Daily Command Centre word guessing</span></div>
+  </a>
+  <a class="card" href="https://poker-planning.lindsen-cruz.workers.dev/">
+    <img src="img/poker-planning.png" alt="Planning Poker">
+    <div class="meta"><h2>Planning Poker</h2><span>Team estimation, with emoji throwing</span></div>
+  </a>
+</div>
+</body>
+</html>
